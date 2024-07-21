@@ -15,9 +15,9 @@
           "options": {
             "outputPath": "dist/lista-tareas",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js" 
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [

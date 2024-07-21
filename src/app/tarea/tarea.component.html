@@ -1,0 +1,15 @@
+<div class="tarea-container">
+    <h1>Lista de Tareas</h1>
+    <input [(ngModel)]="nuevaTarea" placeholder="Nueva tarea" />
+    <button (click)="agregarTarea()">Agregar</button>
+    <ul>
+      <li *ngFor="let tarea of tareas; let i = index">
+        <span [class.completada]="tarea.completada">{{ tarea.nombre }}</span>
+        <button (click)="completarTarea(i)">
+          {{ tarea.completada ? 'Desmarcar' : 'Completar' }}
+        </button>
+        <button (click)="eliminarTarea(i)">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+  
